@@ -3,40 +3,12 @@
 <head>
 
   <title>Disc Golf Search</title>
-  <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-  <script>
-  document.addEventListener("deviceready", onDeviceReady, false);
-  function onDeviceReady() {
-    //navigator.splashscreen.hide();
-    if (navigator.network.connection.type == Connection.NONE) {
-      networkError();
-    } else {
-      loadApp();
-    }
-  }
 
-  function loadApp() {
-    navigator.app.loadUrl("http://dbgunsmoke.com");
-  }
-
-  function networkError() {
-    navigator.notification.alert('Disc Golf Search requires an internet connection');
-    var $net = document.createElement('div');
-    $net.innerHTML = 'Disc Golf Search requires an internet connection';
-    document.body.appendChild($net);
-  }
-  </script>
+        <script type="text/javascript" src="js/global.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
 
   <style>
-  body {
-    padding: 15px;
-    background: #FEEA40;
-    color: #555;
-    text-align: center;
-  }
-  div {
-    font-size: 20px;
-  }
+
   </style>
 </head>
 <body>
