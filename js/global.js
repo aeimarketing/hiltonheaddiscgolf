@@ -4,7 +4,7 @@ function onDeviceReady() {
 
     
     
-}
+
  var url = "https://discgolfsearch.com?ajax=get_events";
     $.getJSON(url, {
       
@@ -25,6 +25,7 @@ function onDeviceReady() {
         $('#events').html(html);
         
     });
+}
 function loadMap() {
     window.open = cordova.InAppBrowser.open;
     openLink('https://discgolfsearch.com',false);
