@@ -1,0 +1,64 @@
+body,html{
+    background:#333;
+    color:#fff;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    margin:0;
+    padding:0;
+}
+#logo{
+    text-align:center;
+        background-color:rgba(235,209,7,1);
+        padding:1em;
+}
+#logo img{
+   margin:0 auto; 
+   max-width:100%;
+   width:200px;
+}
+
+#buttons{
+    
+}
+#buttons a{ 
+    display:block;
+margin:1em auto;
+    width:50%;
+    border:1px solid #888;
+    padding:5px;
+    background-color:rgba(235,209,7,1);
+    color:#333;
+    text-align:center;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+h2{
+    font-size:1.2em;
+    font-weight:bold;
+    text-align:center;
+    margin:5px 0;
+}
+#events{
+    padding:5px 10px;
+}
+.event{
+    margin:0 0 10px 0;
+    background-color:#fff;
+    color:#333;
+    padding:1em;
+}
+.event >div{
+    
+}
+.event .event_date{
+    clear:both;
+    font-weight:bold;
+    font-size:.7em;
+    float:right;
+    padding-left:10px;
+}
+.event .event_name{
+    font-weight:bold;
+}
+.event .location{
+    font-size:.8em;
+}
