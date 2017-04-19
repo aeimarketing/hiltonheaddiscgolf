@@ -9,23 +9,25 @@
 
         <link rel="stylesheet" href="css/global.css" type="text/css" media="screen, projection">
         <script type="text/javascript" src="js/global.js"></script>
+                <script src="js/postMsg.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
 
   <style>
-
+      #wrap{
+          display:none;
+      }
   </style>
 </head>
 <body>
+    <div id='wrap'>
     <div id='logo'>
         <img src='img/logo_full.png' />
     </div>
     <div id='buttons'>
-      
-                <a onclick='loadMap()'>Continue to map</a>
+                <h2>Click back again to exit</h2><br/>
+                <a onclick='loadMap()'>Back to to map</a>
+                <img src='img/icons/Innova-2016.png' alt='Innova' />
       </div>
-    <h2>Upcoming Events</h2>
-    <div id='events'>
-        Loading...
     </div>
 </body>
 </html>
