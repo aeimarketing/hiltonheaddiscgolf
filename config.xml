@@ -10,7 +10,7 @@
         Innova Disk Golf
     </author>
     <author href="http://aeimarketing.com" email="developers@aeimarketing.com">AEI Marketing</author>
-    <preference name="phonegap-version" value="cli-6.5.0" />
+    <preference name="phonegap-version" value="cli-6.5.1" />
     <plugin name="cordova-plugin-whitelist"  />
     <plugin name="cordova-plugin-inappbrowser" spec="1.4" />
     <plugin name="cordova-plugin-geolocation"  />
