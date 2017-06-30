@@ -14,7 +14,12 @@
     <plugin name="cordova-plugin-geolocation"  />
     <plugin name="cordova-plugin-device"  />
     <content src="index.html" />
-    <access origin="*" />
+<plugin name="cordova-plugin-whitelist" version="1"/>
+<allow-navigation href="http://*/*" />
+<allow-navigation href="https://*/*" />
+<allow-navigation href="data:*" />
+<access origin="*" />
+<allow-intent href="*" />
     <allow-intent href="*" />
     <icon src="icon.png" />
     <icon gap:platform="ios" height="60" width="60" src="res/icons/ios/icon-60.png" />
