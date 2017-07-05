@@ -1,7 +1,7 @@
 
 var ref = '';
 var ext = '';
-var dev = 'android';
+var devi = 'android';
 //var dev='apple';
 
 var main_url = 'https://discgolfsearch.com';
@@ -10,7 +10,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
    
     //window.addEventListener("message", receiveMessage, false);
-    if (dev == 'apple') {
+    if (devi == 'apple') {
         $.ajax({
             url: "https://discgolfsearch.com/?ajax=get_events",
             crossDomain: true,
@@ -21,7 +21,7 @@ function onDeviceReady() {
         }).done(function (hits) {
             var html = '';
 
-            hits = JSON.parse(hits)
+            hits = JSON.parse(hits);
             $.each(hits, function (idx, hit) {
 
                 html += '<div class="event">';
@@ -46,7 +46,7 @@ function onDeviceReady() {
 }
 
 function loadMap() {
-        if (dev != 'apple') {
+        if (devi != 'apple') {
             $('#wrap2').hide();
         }
 
@@ -56,6 +56,7 @@ function loadMap() {
     ref.addEventListener('loadstop', function () {
         $('#wrap').show();
         $('#wrap2').hide();
+        ref='';
     });
     ref.addEventListener('loadstart', function (event) {
 
