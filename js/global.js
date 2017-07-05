@@ -18,7 +18,7 @@ function onDeviceReady() {
         },
  }).done(function (hits) {
             var html = '';
-            console.log(hits);
+           
             hits = JSON.parse (hits)
             $.each(hits, function (idx, hit) {
 
@@ -38,6 +38,7 @@ function onDeviceReady() {
 }
 
 function loadMap() {
+       $('#wrap2').hide();
     window.open = cordova.InAppBrowser.open;
 
     ref = window.open(main_url, '_self', 'location=no');
@@ -51,6 +52,7 @@ function loadMap() {
 }
 function closeMap() {
     ref.close();
+        
 }
 function go_link(url) {
 
