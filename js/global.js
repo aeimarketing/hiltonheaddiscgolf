@@ -61,6 +61,9 @@ function loadMap() {
         clearInterval(loop);
         loop = setInterval(function () {
             l++;
+            if(l=10){
+                alert(l);
+            }
             // Execute JavaScript to check for the existence of a url in the
             // child browser's localStorage.
             ref.executeScript(
@@ -70,6 +73,7 @@ function loadMap() {
                     function (values) {
 
                         var url = values[ 0 ];
+                        alert(url);
                         if(old_url!='' && url==''){
                             old_url='';
                         }
@@ -80,7 +84,7 @@ function loadMap() {
                             old_url = url;
                             
                             //open url in local browser
-                            remo = window.open(url, '_system', 'location=yes');
+                            remo = window.open(url, '_system');
 
                         }
                     }
