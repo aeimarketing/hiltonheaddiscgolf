@@ -46,7 +46,7 @@ function loadMap() {
 
     window.open = cordova.InAppBrowser.open;
 
-    ref = window.open(main_url, '_self', 'location=no');
+    ref = window.open(main_url, '_blank', 'location=no');
     ref.addEventListener('loadstart', function (event) {
 
 
@@ -60,10 +60,7 @@ function loadMap() {
         // Start an interval
         clearInterval(loop);
         loop = setInterval(function () {
-            l++;
-            if(l=10){
-                alert(l);
-            }
+            
             // Execute JavaScript to check for the existence of a url in the
             // child browser's localStorage.
             ref.executeScript(
@@ -73,7 +70,7 @@ function loadMap() {
                     function (values) {
 
                         var url = values[ 0 ];
-                        alert(url);
+                        
                         if(old_url!='' && url==''){
                             old_url='';
                         }
