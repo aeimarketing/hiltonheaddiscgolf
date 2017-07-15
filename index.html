@@ -13,8 +13,8 @@
         <script type="text/javascript" src="cordova.js"></script>
 
         <style>
-            #wrap{
-               
+            .hide_first_load{
+               display:none;
             }
         </style>
     </head>
@@ -24,7 +24,7 @@
                 <img src='img/logo_full.png' />
             </div>
             <div id='buttons'>
-                <h2 >Click back again to exit</h2><br/>
+                <h2 class='hide_first_load'>Click back again to exit</h2><br/>
                 <a onclick='loadMap()'>Show map</a>
                 
             </div>

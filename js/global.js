@@ -49,7 +49,7 @@ function loadMap() {
     ref = window.open(main_url, '_blank', 'location=no');
     ref.addEventListener('loadstart', function (event) {
 
-
+        $('.hide_first_load').show();
     });
 
     ref.addEventListener("loadstop", function () {
