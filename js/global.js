@@ -50,13 +50,13 @@ function loadMap() {
 
     ref = window.open(main_url, '_blank', 'location=no,toolbar=no');
     ref.addEventListener('loadstart', function (event) {
-
-        $('.hide_first_load').show();
-        $('.hide_after_first_load').hide();
+        
+        
     });
 
     ref.addEventListener("loadstop", function () {
-
+       $('.hide_first_load').show();
+        $('.hide_after_first_load').hide();
         //send events to browser
         ref.executeScript({code: "$('#imported_events_list').html('"+$('#events').html()+"');$('#event_cal_box').show();"});
 
