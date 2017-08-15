@@ -13,22 +13,28 @@
         <script type="text/javascript" src="cordova.js"></script>
 
         <style>
-            .hide_first_load{
-               display:none;
-            }
+            
         </style>
     </head>
-    <body> 
+    <body > 
         <div id='wrap'>
             <div id='logo'>
                 <img src='img/logo_full.png' />
+               
             </div>
-            <div id='buttons'>
-                <h2 class='hide_first_load'>Click back again to exit</h2><br/>
+            <div id='buttons' class='hide_first_load'>
+                <br/>
+                 <h2 >Click back again to exit</h2>
                 <a onclick='loadMap()'>Show map</a>
                 
+                <br/>
             </div>
-        <div id='wrap2'> 
+            <div id='loading' class='hide_after_first_load'>
+                <br/>
+                <h2 >loading...</h2>
+                <br/>
+            </div>
+        <div id='wrap2' class='hide'> 
                     <h2>Upcoming events</h2>
                     <div id='events'></div>
                 </div>

@@ -21,21 +21,23 @@ function onDeviceReady() {
         }
     }).done(function (hits) {
         var html = '';
-
+        var old_date='';
         hits = JSON.parse(hits);
         $.each(hits, function (idx, hit) {
-
+           
+            
             html += '<div class="event">';
-            html += '<div class="event_date">' + hit.date_start + '</div>';
             html += '<div class="event_name">' + hit.name + '</div>';
-            html += '<div class="location">' + hit.city + ', ' + hit.state + ', ' + hit.zip + '</div>';
+             html += '<div class="event_date">' + hit.date_start + '</div>';
             html += '<div class="type">' + hit.type + '</div>';
-            html += '<div class="status">' + hit.registration_status + '<br/>' + hit.spots + ' spots available</div>';
+            html += '<div class="location">' + hit.city + ', ' + hit.state + '</div>';
+
+           // html += '<div class="status">' + hit.registration_status + '<br/>' + hit.spots + ' spots available</div>';
             html += '</div>';
 
         });
         $('#events').html(html);
-
+        loadMap();
 
     });
 }
@@ -46,13 +48,17 @@ function loadMap() {
 
     window.open = cordova.InAppBrowser.open;
 
-    ref = window.open(main_url, '_blank', 'location=no');
+    ref = window.open(main_url, '_blank', 'location=no,toolbar=no');
     ref.addEventListener('loadstart', function (event) {
 
         $('.hide_first_load').show();
+        $('.hide_after_first_load').hide();
     });
 
     ref.addEventListener("loadstop", function () {
+
+        //send events to browser
+        ref.executeScript({code: "$('#imported_events_list').html('"+$('#events').html()+"');$('#event_cal_box').show();"});
 
         // Clear out the url in localStorage for subsequent opens.
         ref.executeScript({code: "localStorage.setItem( 'url', '' );"});
