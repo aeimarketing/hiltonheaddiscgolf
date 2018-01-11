@@ -4,7 +4,7 @@
 
         <meta name="viewport" content="user-scalable=no" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Disc Golf Search</title>
+        <title>Hilton Head Disc Golf</title>
         <script src="js/jquery.min.js"></script>
 
 
@@ -13,31 +13,32 @@
         <script type="text/javascript" src="cordova.js"></script>
 
         <style>
-            
+
         </style>
     </head>
     <body > 
         <div id='wrap'>
             <div id='logo'>
                 <img src='img/logo_full.png' />
-               
+
             </div>
             <div id='buttons' class='hide_first_load'>
                 <br/>
-                 <h2 >Click back again to exit</h2>
-                <a onclick='loadMap()'>Show map</a>
-                
+                <h2 >Click back again to exit</h2>
+               
+
+                <br/>
+            </div> 
+            <a class='button'onclick='loadSite()'>Continue</a>
+            <div id='loading' >
+                <br/>
+                 <div id='front'></div>
                 <br/>
             </div>
-            <div id='loading' class='hide_after_first_load'>
-                <br/>
-                <h2 >loading...</h2>
-                <br/>
+            <div id='' class=''> 
+
+               
             </div>
-        <div id='wrap2' class='hide'> 
-                    <h2>Upcoming events</h2>
-                    <div id='events'></div>
-                </div>
         </div>
     </body>
 </html>

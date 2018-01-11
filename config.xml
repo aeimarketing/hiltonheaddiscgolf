@@ -1,13 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="discgolfsearch" version="0.2.5" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Disc Golf Search</name>
-    <description>
-        A geolocation app designed to help you find disc golf courses, events and dealers near you.
-        This app from Innova Disc Golf will find your location and tell you about Disc Golf near you.
-        The filters allow selection of one or tow or all of our location layers and the app lets you know about special offers from Innova Disc Golf.
-    </description>
+<widget id="hiltonheaddeiscgolf" version="0.2.4" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Hilton Head Disc Golf</name>
+    <description>The Home of The 2018 Hilton Head Invitational</description>
     <author email="developers@aeimarketing.com" href="http://aeimarketing.com">
-        Innova Disk Golf
+        Hilton Head Disk Golf
     </author>
     <preference name="phonegap-version" value="cli-6.5.0" />
     
@@ -27,26 +23,25 @@
     <allow-navigation href="data:*" />
     <access origin="*" />
     <allow-intent href="*" />
-    <icon src="icon.png" />
-    <icon gap:platform="ios" height="60" width="60" src="res/icons/ios/icon-60.png" />
-    <icon gap:platform="ios" height="120" width="120" src="res/icons/ios/icon-60-2x.png" />
-    <icon gap:platform="ios" height="180" width="180" src="res/icons/ios/icon-60-3x.png" />
-    <icon gap:platform="ios" height="76" width="76" src="res/icons/ios/icon-76.png" />
-    <icon gap:platform="ios" height="152" width="152" src="res/icons/ios/icon-76-2x.png" />
-    <icon gap:platform="ios" height="40" width="40" src="res/icons/ios/icon-40.png" />
-    <icon gap:platform="ios" height="80" width="80" src="res/icons/ios/icon-40-2x.png" />
-    <icon gap:platform="ios" height="57" width="57" src="res/icons/ios/icon-57.png" />
-    <icon gap:platform="ios" height="114" width="114" src="res/icons/ios/icon-57-2x.png" />
-    <icon gap:platform="ios" height="72" width="72" src="res/icons/ios/icon-72.png" />
-    <icon gap:platform="ios" height="144" width="144" src="res/icons/ios/icon-72-2x.png" />
-    <icon gap:platform="ios" height="29" width="29" src="res/icons/ios/icon-small.png" />
-    <icon gap:platform="ios" height="58" width="58" src="res/icons/ios/icon-small-2x.png" />
-    <icon gap:platform="ios" height="50" width="50" src="res/icons/ios/icon-50.png" />
-    <icon gap:platform="ios" height="100" width="100" src="res/icons/ios/icon-50-2x.png" />
-    <icon gap:platform="android" gap:qualifier="ldpi" src="res/icons/android/icon-36-ldpi.png" />
-    <icon gap:platform="android" gap:qualifier="mdpi" src="res/icons/android/icon-48-mdpi.png" />
-    <icon gap:platform="android" gap:qualifier="hdpi" src="res/icons/android/icon-72-hdpi.png" />
-    <icon gap:platform="android" gap:qualifier="xhdpi" src="res/icons/android/icon-96-xhdpi.png" />
-    <icon gap:platform="android" gap:qualifier="xxhdpi" src="res/icons/android/icon-144-xxhdpi.png" />
-    <icon gap:platform="android" gap:qualifier="xxxhdpi" src="res/icons/android/icon-192-xxxhdpi.png" />
+   <platform name="ios"><icon src="res/icons/ios/icon-1024.png" width="1024" height="1024"/><icon src="res/icons/ios/icon-small.png" width="29" height="29"/><icon src="res/icons/ios/icon-small@2x.png" width="58" height="58"/><icon src="res/icons/ios/icon-small@3x.png" width="87" height="87"/><icon src="res/icons/ios/icon-small-40.png" width="40" height="40"/><icon src="res/icons/ios/icon-small-40@2x.png" width="80" height="80"/><icon src="res/icons/ios/icon-small-40@3x.png" width="120" height="120"/><icon src="res/icons/ios/icon-small-50.png" width="50" height="50"/><icon src="res/icons/ios/icon-small-50@2x.png" width="100" height="100"/><icon src="res/icons/ios/icon.png" width="57" height="57"/><icon src="res/icons/ios/icon@2x.png" width="114" height="114"/><icon src="res/icons/ios/icon-60.png" width="60" height="60"/><icon src="res/icons/ios/icon-60@2x.png" width="120" height="120"/><icon src="res/icons/ios/icon-60@3x.png" width="180" height="180"/><icon src="res/icons/ios/icon-72.png" width="72" height="72"/><icon src="res/icons/ios/icon-72@2x.png" width="144" height="144"/><icon src="res/icons/ios/icon-76.png" width="76" height="76"/><icon src="res/icons/ios/icon-76@2x.png" width="152" height="152"/><icon src="res/icons/ios/icon-167.png" width="167" height="167"/><icon src="res/icons/ios/icon-83.5@2x.png" width="167" height="167"/><!-- Legacy portrait --><splash src="res/screens/ios/Default~iphone.png" width="320" height="480"/><splash src="res/screens/ios/Default@2x~iphone.png" width="640" height="960"/><splash src="res/screens/ios/Default-Portrait~ipad.png" width="768" height="1024"/><splash src="res/screens/ios/Default-Portrait@2x~ipad.png" width="1536" height="2048"/><splash src="res/screens/ios/Default-568h@2x~iphone.png" width="640" height="1136"/><splash src="res/screens/ios/Default-667h.png" width="750" height="1334"/><splash src="res/screens/ios/Default-736h.png" width="1242" height="2208"/><!-- Legacy landscape --><!--
+        <splash src="res/screens/ios/Default-Landscape~ipad.png" width="1024" height="768"/>
+        <splash src="res/screens/ios/Default-Landscape@2x~ipad.png" width="2048" height="1536"/>
+        --><!-- Storyboard portrait --><!--
+        <splash src="res/screens/ios/Default@2x~iphone~anyany.png" />
+        <splash src="res/screens/ios/Default@2x~iphone~comany.png" />
+        <splash src="res/screens/ios/Default@3x~iphone~anyany.png" />
+        <splash src="res/screens/ios/Default@3x~iphone~comany.png" />
+        <splash src="res/screens/ios/Default@2x~ipad~anyany.png" />
+        <splash src="res/screens/ios/Default@2x~ipad~comany.png" />
+        --><!-- Storyboard landscape --><!--
+        <splash src="res/screens/ios/Default@2x~iphone~comcom.png" />
+        <splash src="res/screens/ios/Default@3x~iphone~anycom.png" />
+        --></platform><platform name="android"><icon density="ldpi" src="res/icons/android/ldpi.png"/><icon density="mdpi" src="res/icons/android/mdpi.png"/><icon density="hdpi" src="res/icons/android/hdpi.png"/><icon density="xhdpi" src="res/icons/android/xhdpi.png"/><icon density="xxhdpi" src="res/icons/android/xxhdpi.png"/><icon density="xxxhdpi" src="res/icons/android/xxxhdpi.png"/><!-- Portrait --><splash density="port-ldpi" src="res/screens/android/splash-port-ldpi.png"/><splash density="port-mdpi" src="res/screens/android/splash-port-mdpi.png"/><splash density="port-hdpi" src="res/screens/android/splash-port-hdpi.png"/><splash density="port-xhdpi" src="res/screens/android/splash-port-xhdpi.png"/><splash density="port-xxhdpi" src="res/screens/android/splash-port-xxhdpi.png"/><splash density="port-xxxhdpi" src="res/screens/android/splash-port-xxxhdpi.png"/><!-- Landscape --><!--
+        <splash density="land-ldpi" src="res/screens/android/splash-land-ldpi.png" />
+        <splash density="land-mdpi" src="res/screens/android/splash-land-mdpi.png" />
+        <splash density="land-hdpi" src="res/screens/android/splash-land-hdpi.png" />
+        <splash density="land-xhdpi" src="res/screens/android/splash-land-xhdpi.png" />
+        <splash density="land-xxhdpi" src="res/screens/android/splash-land-xxhdpi.png" />
+        <splash density="land-xxxhdpi" src="res/screens/android/splash-land-xxxhdpi.png" />
+        --></platform>
 </widget>

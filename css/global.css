@@ -1,5 +1,5 @@
 body,html{
-       background-color:rgba(235,209,7,1);
+       background-color:#0093D0;
     color:#000;
     font-family: "Arial Narrow", Arial, sans-serif;
     margin:0;
@@ -7,7 +7,7 @@ body,html{
 }
 #logo{
     text-align:center;
-        background-color:rgba(235,209,7,1);
+        background-color:#0093D0;
         padding:1em;
 }
 #logo img{
@@ -31,13 +31,13 @@ h3{
     max-width:90%;
     width:300px;
 }
-#buttons a{ 
+a.button{ 
     display:block;
 margin:1em auto;
     width:50%;
     border:1px solid #888;
     padding:5px;
-    background-color:rgba(235,209,7,1);
+    background-color:#8DC63F;
     color:#333;
     text-align:center;
     font-weight:bold;
@@ -49,30 +49,9 @@ h2{
     text-align:center;
     margin:5px 0;
 }
-#events{
-    padding:5px 10px;
-}
-.event{
-    margin:0 0 10px 0;
-    background-color:#fff;
-    color:#333;
-    padding:1em;
-}
-.event >div{
-    
-}
-.event .event_date{
-    clear:both;
-    font-weight:bold;
-    font-size:.7em;
-    float:right;
-    padding-left:10px;
-}
-.event .event_name{
-    font-weight:bold;
-}
-.event .location{
-    font-size:.8em;
+#front{
+    text-align:left;
+    padding:0 10px;
 }
 #wrap2{
     width:320px;
