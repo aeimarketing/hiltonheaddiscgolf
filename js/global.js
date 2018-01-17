@@ -47,39 +47,39 @@ function loadSite() {
         //send events to browser
         
         // Clear out the url in localStorage for subsequent opens.
-        ref.executeScript({code: "localStorage.setItem( 'url', '' );"});
-
-        // Start an interval
-        clearInterval(loop);
-        loop = setInterval(function () {
-
-            // Execute JavaScript to check for the existence of a url in the
-            // child browser's localStorage.
-            ref.executeScript(
-                    {
-                        code: "localStorage.getItem( 'url' )"
-                    },
-                    function (values) {
-
-                        var url = values[ 0 ];
-
-                        if (old_url != '' && url == '') {
-                            old_url = '';
-                        }
-                        ref.executeScript({code: "localStorage.setItem( 'url', '' );"});
-                        // If a url was set, clear the interval and close the InAppBrowser.
-                        if (url != '' && url != old_url) {
-
-                            old_url = url;
-
-                            //open url in local browser
-                            remo = window.open(url, '_system');
-
-                        }
-                    }
-            );
-
-        }, 500);
+//        ref.executeScript({code: "localStorage.setItem( 'url', '' );"});
+//
+//        // Start an interval
+//        clearInterval(loop);
+//        loop = setInterval(function () {
+//
+//            // Execute JavaScript to check for the existence of a url in the
+//            // child browser's localStorage.
+//            ref.executeScript(
+//                    {
+//                        code: "localStorage.getItem( 'url' )"
+//                    },
+//                    function (values) {
+//
+//                        var url = values[ 0 ];
+//
+//                        if (old_url != '' && url == '') {
+//                            old_url = '';
+//                        }
+//                        ref.executeScript({code: "localStorage.setItem( 'url', '' );"});
+//                        // If a url was set, clear the interval and close the InAppBrowser.
+//                        if (url != '' && url != old_url) {
+//
+//                            old_url = url;
+//
+//                            //open url in local browser
+//                            remo = window.open(url, '_system');
+//
+//                        }
+//                    }
+//            );
+//
+//        }, 500);
 
     });
 }
